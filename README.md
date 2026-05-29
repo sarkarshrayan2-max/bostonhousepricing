@@ -2,7 +2,7 @@
 
 1.[Github Account](https://github.com/sarkarshrayan2-max/bostonhousepricing)
 
-2.[HerokuAccount](https://heroku.com)
+2.[Render](https://render.com)
 
 3.[GitCLI]
 
