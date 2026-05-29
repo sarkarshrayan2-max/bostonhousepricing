@@ -13,6 +13,7 @@ Create a new enviornment
 '''
 conda create -p venv python==3.12.4 -y
 
+To activate Enviornment use "venv\Scripts\activate"
 '''
 
 
