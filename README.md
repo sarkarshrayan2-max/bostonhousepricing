@@ -10,7 +10,7 @@
 
 5.[Postman]
 
-Create a new enviornment
+Create a new enviornment.....
 
 '''
 conda create -p venv python==3.12.4 -y
