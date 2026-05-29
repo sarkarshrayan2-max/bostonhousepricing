@@ -3,7 +3,9 @@ import numpy as np
 import pandas as pd 
 import joblib
 app=Flask(__name__)
-model=joblib.load(open('elasticnet_model.joblib','rb'))
+
+
+model = joblib.load('elasticnet_model1.joblib')
 
 @app.route('/')
 def home():
@@ -12,11 +14,21 @@ def home():
 @app.route('/predict_api', methods=['POST'])
 def predict_api():
     data = request.get_json()
-    new_data = np.array(list(data.values())).reshape(1, -1)
-    print(new_data)
-    output = model.predict(new_data)
+
+    feature_order = [
+        'CRIM', 'ZN', 'INDUS', 'CHAS', 'NOX',
+        'RM', 'AGE', 'DIS', 'RAD', 'TAX',
+        'PTRATIO', 'B', 'LSTAT'
+    ]
+
+    input_data = pd.DataFrame([data], columns=feature_order)
+
+    print(input_data)
+
+    prediction = model.predict(input_data)
+
     return jsonify({
-        'prediction': float(output[0])
+        "prediction": float(prediction[0])
     })
 
 if __name__=="__main__":
