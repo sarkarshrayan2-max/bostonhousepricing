@@ -2,7 +2,7 @@
 
 1.[Github Account](https://github.com/sarkarshrayan2-max/bostonhousepricing)
 
-2.[Render](https://render.com)
+2.[Render](https://bostonhousepricing-24n2.onrender.com)
 
 3.[GitCLI]
 
@@ -11,6 +11,7 @@
 5.[Postman]
 
 6.[Docker]
+
 '''
 🏠 Boston House Price Prediction
 
