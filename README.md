@@ -13,11 +13,11 @@
 6.[Docker]
 
 '''
-🏠 Boston House Price Prediction
+ Boston House Price Prediction
 
 This project is an end-to-end Machine Learning application that predicts Boston house prices based on various housing features. The model is trained using the ElasticNet Regression algorithm and deployed as a Flask web application.
 
-🚀 Features
+ Features
 Predict house prices using 13 housing attributes
 REST API support for programmatic predictions
 User-friendly web interface built with Flask
@@ -26,7 +26,7 @@ Containerized using Docker
 Automated deployment with GitHub Actions
 Hosted on Render
 
-🛠️ Tech Stack
+ Tech Stack
 Python
 Pandas & NumPy
 Scikit-Learn
@@ -35,11 +35,11 @@ Joblib
 Docker
 GitHub Actions
 Render
-📊 Model
+ Model
 
 The model is trained using ElasticNet Regression, which combines both L1 (Lasso) and L2 (Ridge) regularization to improve prediction performance and reduce overfitting.
 
-📁 Project Workflow
+ Project Workflow
 Data Preprocessing
         ↓
 Model Training (ElasticNet)
@@ -55,7 +55,7 @@ GitHub Repository
 GitHub Actions CI/CD
         ↓
 Render Deployment
-🌐 API Endpoint
+ API Endpoint
 Predict House Price
 
 POST /predict_api
@@ -83,7 +83,7 @@ Response:
 {
   "prediction": 28.88
 }
-🐳 Running with Docker
+ Running with Docker
 
 Build Image:
 
