@@ -9,8 +9,8 @@ stages:
       size: 35008
     - path: src/train.py
       hash: md5
-      md5: a49e870e73a706d7d4732d50b0450410
-      size: 2628
+      md5: de8436df71aa3a05716bef7273182774
+      size: 2534
     params:
       params.yaml:
         model.alpha: 0.01
@@ -21,7 +21,7 @@ stages:
     outs:
     - path: artifacts/model.joblib
       hash: md5
-      md5: b85fc1a7fce7597f78fcfd85cf6cd0e2
+      md5: ca7c5e48af735761e97b639ba1c87981
       size: 2200
     - path: metrics.json
       hash: md5
