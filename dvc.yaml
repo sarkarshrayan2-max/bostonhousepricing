@@ -1,0 +1,16 @@
+stages:
+  train:
+    cmd: python src/train.py
+    deps:
+      - src/train.py
+      - data/raw/HousingData.csv
+    params:
+      - train.test_size
+      - train.random_state
+      - model.alpha
+      - model.l1_ratio
+      - model.max_iter
+    outs:
+      - artifacts/model.joblib
+    metrics:
+      - metrics.json

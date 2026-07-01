@@ -1,0 +1,29 @@
+schema: '2.0'
+stages:
+  train:
+    cmd: python src/train.py
+    deps:
+    - path: data/raw/HousingData.csv
+      hash: md5
+      md5: 9d9460d994e88c868ee98ea23e6c4111
+      size: 35008
+    - path: src/train.py
+      hash: md5
+      md5: a49e870e73a706d7d4732d50b0450410
+      size: 2628
+    params:
+      params.yaml:
+        model.alpha: 0.01
+        model.l1_ratio: 0.2
+        model.max_iter: 10000
+        train.random_state: 42
+        train.test_size: 0.2
+    outs:
+    - path: artifacts/model.joblib
+      hash: md5
+      md5: b85fc1a7fce7597f78fcfd85cf6cd0e2
+      size: 2200
+    - path: metrics.json
+      hash: md5
+      md5: 72d074d5e03d265b575f5c14d2e304f8
+      size: 98
