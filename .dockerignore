@@ -5,3 +5,6 @@ __pycache__/
 *.ipynb
 .ipynb_checkpoints/
 HousingData.csv
+# Deployment-only image: the API needs model.joblib, not training data or DVC venv
+/.dvc-venv/
+/data/

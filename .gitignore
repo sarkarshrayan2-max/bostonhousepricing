@@ -218,3 +218,8 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 /metrics.json
+
+# DVC-managed local artifacts
+/data/raw/HousingData.csv
+/artifacts/
+/.dvc-venv/
