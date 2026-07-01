@@ -3,4 +3,3 @@
 ['remote "s3remote"']
     url = s3://shrayan-boston-mlops-20260701-4821/dvc
     region = us-east-1
-    profile = boston-dvc
